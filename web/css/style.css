@@ -1,0 +1,207 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #FBFBFB;
+}
+/* Menu */
+.selector-pais {
+    text-align: center;
+}
+.selector-pais img {
+    display: block;
+    margin: 0 auto;
+}
+a.nav-link.btn {
+    border: 1px solid #1A72AD;
+    color: #1A72AD !important;
+    padding: 10px 20px !important;
+    border-radius: 10px;
+}
+nav.navbar-expand-lg {
+    background: white;
+    justify-content: space-between;
+}
+a.navbar-brand img {
+    max-width: 200px;
+    margin-right: 80px;
+}
+nav.navbar-expand-lg {
+    background: white;
+    justify-content: center;
+    align-items: flex-start;
+}
+nav form {
+    margin-top: 26px;
+}
+.navbar-expand-lg .navbar-collapse {
+    width: auto;
+    flex-grow: unset;
+}
+.navbar-expand-lg .navbar-nav {
+    padding-top: 19px;
+}
+nav li.nav-item {
+    padding: 0 20px;
+}
+.selector-pais span {
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+    color: black;
+    margin-top: 5px;
+}
+.dropdown-toggle::after {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
+/* Menu */
+/* Home */
+.carousel-item .col-lg-4 h4 {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    bottom: 5px;
+    right: 45px;
+}
+section{
+    padding-top:50px;
+}
+.icon-item img {
+    margin-bottom: 5px;
+}
+.icon-item {
+    text-align: center;
+    width: 20%;
+}
+.icon-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.home-map iframe {
+    margin-top: 20px;
+    box-shadow: 0 0 10px #d2d2d2;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 20px;
+}
+img{
+    max-width: 100%;;
+}
+.locacion-item h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.locacion-item p:before {
+    width: 23px;
+    height: 23px;
+    background: url(img/clock.png);
+    display: block;
+    content: '';
+    position: absolute;
+    left: -35px;
+    background-size: contain;
+}
+.locacion-item p {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.locacion-item img {
+    width: 100%;
+}
+.locacion-item {
+    width: 32%;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0 0 10px #d2d2d2;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.locacion-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+/* Home */
+/* Footer */
+footer {
+    background: #1A72AD;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top:20px;
+}
+footer p {
+    margin-left: 78px;
+    margin-top: 10px;
+}
+img.logo-f {
+    max-width: 250px;
+}
+.redes img {
+    margin-left: 8px;
+}
+.redes {
+    text-align: right;
+}
+section.copy .row {
+    justify-content: space-between;
+    display: flex;
+}
+section.copy p {
+    margin: 0;
+}
+section.copy {
+    background: #00A1DB;
+    padding: 15px 0;
+}
+.copy-links a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+}
+/* Footer */
+/* Horarios */
+section.horarios h4 {
+    color: white;
+    margin-top: 20px;
+}
+section.horarios {
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 0;
+}
+.hora-cont .estado img {
+    margin-right: 7px;
+}
+.hora-cont .estado {
+    display: flex;
+    align-items: center;
+}
+.hora-cont p {
+    margin: 0;
+}
+.hora-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 10px #c7c7c7;
+    padding: 20px 30px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.hora img {
+    max-width: 20px;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+/* Horarios */
+@media screen and (max-width: 991px) {
+
+}

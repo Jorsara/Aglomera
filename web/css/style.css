@@ -55,6 +55,10 @@ nav li.nav-item {
     top: 17px;
     right: 15px;
 }
+a.btn.btn-outline-success.my-2.my-sm-0:hover, a.btn.btn-outline-success.my-2.my-sm-0:active {
+    background: none;
+    opacity: 0.5;
+}
 /* Menu */
 /* Home */
 .carousel-item .col-lg-4 h4 {
@@ -96,7 +100,7 @@ img{
 .locacion-item p:before {
     width: 23px;
     height: 23px;
-    background: url(img/clock.png);
+    background: url(../img/clock.png);
     display: block;
     content: '';
     position: absolute;
@@ -202,6 +206,27 @@ section.horarios {
     margin-top: -3px;
 }
 /* Horarios */
+/* Busqueda */
+.busqueda .locacion-item img {
+    max-width: 150px;
+}
+.busqueda .locacion-item {
+    margin-left:10px;
+    margin-right:10px;
+    width: 31%;
+}
+.busqueda .locacion-cont {
+    justify-content: flex-start;
+    margin-left:-10px;
+    margin-right: -10px;
+}
+#busqueda-error{
+    display:none;
+}
+#busqueda-error.activar{
+    display:block;
+}
+/* Busqueda */
 @media screen and (max-width: 991px) {
 
 }

@@ -1,0 +1,64 @@
+[{
+    "id" : "1",
+	"nombre": "Lider",
+    "sucursales": [
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            "abierto" : true
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar 2",
+            "horario": "Lun - Dom 9 hs - 21 hs",
+            "abierto" : false
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar 3 ",
+            "horario": "Lun - Dom 10 hs - 21 hs",
+            "abierto" : true
+        }
+    ],
+    "logo": "lider-r.png"
+}, {
+    "id" : "2",
+	"nombre": "Lider 2",
+    "sucursales": [
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            "abierto" : true
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            " abierto" : true
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            "abierto" : true
+        }
+    ],
+    "logo": "lider-r.png"
+}, {
+    "id" : "3",
+	"nombre": "Walmart",
+    "sucursales": [
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            "abierto" : true
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            " abierto" : true
+        },
+        {    
+            "direccion": "Av. 15 Norte 961, Viña del Mar",
+            "horario": "Lun - Dom 8 hs - 21 hs",
+            "abierto" : true
+        }
+    ],
+    "logo": "lider-r.png"
+}]

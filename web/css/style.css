@@ -51,9 +51,7 @@ nav li.nav-item {
     margin-top: 5px;
 }
 .dropdown-toggle::after {
-    position: absolute;
-    top: 17px;
-    right: 15px;
+    display:none;
 }
 a.btn.btn-outline-success.my-2.my-sm-0:hover, a.btn.btn-outline-success.my-2.my-sm-0:active {
     background: none;
@@ -61,12 +59,28 @@ a.btn.btn-outline-success.my-2.my-sm-0:hover, a.btn.btn-outline-success.my-2.my-
 }
 /* Menu */
 /* Home */
-.carousel-item .col-lg-4 h4 {
+.img-caja {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.ic1{
+    background: url(../img/icon-5.png); 
+}
+.ic1:hover {
+    background: url(../img/icon-4.png);
+}
+.carousel-item .col-lg-6 h4 {
     position: absolute;
     z-index: 999;
     color: white;
     bottom: 5px;
     right: 45px;
+}
+.carousel{
+    width:100%;
 }
 section{
     padding-top:50px;
@@ -175,8 +189,8 @@ section.horarios h4 {
     margin-top: 20px;
 }
 section.horarios {
-    background: url(../img/fondo.jpg);
-    background-size: cover;
+    background-size: cover !important;
+    border-radius: 0 0 150px 150px;
     background-position: bottom;
     padding: 100px 0;
 }
@@ -207,9 +221,6 @@ section.horarios {
 }
 /* Horarios */
 /* Busqueda */
-.busqueda .locacion-item img {
-    max-width: 150px;
-}
 .busqueda .locacion-item {
     margin-left:10px;
     margin-right:10px;
@@ -227,6 +238,14 @@ section.horarios {
     display:block;
 }
 /* Busqueda */
+/* Local */
+.hora-cont.abierto .estado {
+    color: green;
+}
+.hora-cont.cerrado {
+    background: #ffebeb;
+}
+/* Local */
 @media screen and (max-width: 991px) {
 
 }

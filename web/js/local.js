@@ -4,25 +4,40 @@ $(document).ready(function() {
     const urlParams = new URLSearchParams(queryString);
     const local = urlParams.get('id');
 
+    const horas = new Date().getHours();
+    const minutos = new Date().getMinutes();
+    let horasInt = horas + (minutos / 60);
+    console.log(horasInt);
+
     // Definir local
-    $.getJSON("../locales.json", function(json) {        
+    $.getJSON("../lugares.json", function(json) {        
         // Establecer resultado
         let result = json.filter(obj => {
-            return obj.id == local;
+            return obj.cadena == local;
         });
+        let sucursales = json.filter(obj => {
+            return obj.cadena.toLowerCase().includes(local.toLowerCase());
+        });        
         
         // Modificar html segun resultado
-        $('.horarios img').attr('src', `/img/${result[0].logo}`);
-        $('.horarios h4').html(result[0].nombre);
-        result[0].sucursales.forEach(e => {
+        $('.horarios img').attr('src', `/img/${result[0].imagen_redonda}`);
+        $('.horarios h4').html(result[0].cadena);
+        $('section.horarios').attr('style', `background: url(../img/${result[0].imagen_fondo});`)
+        sucursales.forEach(e => {
             let estado;
-            if(e.abierto){
+            let horaSucursalA = parseInt(e.horario[0] + e.horario[1]) + (parseInt(e.horario[3] + e.horario[4]) / 60);
+            let horaSucursalC = parseInt(e.horario[6] + e.horario[7]) + (parseInt(e.horario[9] + e.horario[10]) / 60);
+            let claseEstado = 'abierto';
+
+            if(horas >= horaSucursalA && horas <= horaSucursalC){
                 estado = '<img src="img/check.png"><p>ABIERTO</p>'
             }else{
-                estado = '<img src="img/check.png"><p>CERRADO</p>'
-            }
+                estado = '<img src="img/cerrado.png"><p>CERRADO</p>'
+                claseEstado = 'cerrado';
+            } 
+
             $('.horarios-cont .row').append(`
-                <div class="hora-cont">
+                <div class="hora-cont ${claseEstado}">
                     <div class="hora">
                         <p>${e.direccion}</p>
                         <p><img src="img/clock.png">${e.horario}</p>
